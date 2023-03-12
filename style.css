@@ -73,6 +73,7 @@ form
 	display: flex;
 	flex-direction: column;
   height: max-content;
+  
 }
 
 .container h2{
@@ -86,6 +87,7 @@ form
 .center{
 margin: 10px 0;
 font-weight: 500;
+font-size: 1.4rem;
 }
 .grid_1{
    display: grid;
@@ -103,7 +105,7 @@ label{
     display: block;
     margin: 12px 0 5px 0;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem;
     
 }
 .child
@@ -128,6 +130,7 @@ border-top: none;
 letter-spacing: 0.02rem;
 background: inherit;
 color: white;
+font-size: 1rem;
 }
 input:focus{
   border: 1px solid rgb(23, 7, 253);
@@ -198,7 +201,7 @@ visibility: visible;
   position: absolute;
   margin-top: 2px;
   padding-left: 6px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   display: block;
 }
 
