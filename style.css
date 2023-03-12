@@ -205,7 +205,7 @@ input:focus {
 }
 
 .btn {
-  margin: 17px 0px 10px 33px;
+  margin: 17px 0px 30px 33px;
 }
 .btn button {
   padding: 8px 14px;
@@ -281,6 +281,6 @@ form {
     margin: 0 4px 0 6px;
   }
   .btn {
-    margin: 17px 0px 10px 20px;
+    margin: 17px 20px 35px 20px;
   }
 }
