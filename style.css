@@ -221,8 +221,7 @@ visibility: visible;
 }
 
 .btn{
-margin-top: 20px ;
-margin-left: 50px;
+  margin: 17px 0px 10px 33px;
 }
 .btn button{
     padding: 8px 14px;
@@ -309,5 +308,8 @@ form {
 .radio input {
   margin: 0 4px 0 6px;
 
+}
+.btn{
+  margin: 17px 0px 10px 20px;
 }
 }
