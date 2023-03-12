@@ -17,7 +17,7 @@ let parentNumber = document.getElementsByClassName("phoneNumber");
 let setData = (str, count, firstName, lastName) => {
   if (str === count) {
     swal(
-      `THANK YOU ${firstName.toUpperCase()} ${lastName.toUpperCase()} for Submit the From Successfully!`
+      `THANK YOU ${firstName.toUpperCase()} ${lastName.toUpperCase()} You have Successfully Submitted the Form`
     );
   }
 };
