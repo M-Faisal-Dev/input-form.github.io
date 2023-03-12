@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="phone-number-validation\build\css\intlTelInput.css">
+<!-- <link rel="stylesheet" href="phone-number-validation\build\css\intlTelInput.min.css"> -->
+  
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form">
+       <h2>Input Form</h2>
+
+            <!-- personal information -->
+        <h3 class="center">Personal Information</h3>
+
+            <div class="personal grid_1">
+                <div class="child select">
+            <label>First Name:</label>
+          <input type="text" id="firstname" placeholder="First name" value=""> 
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-info"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="child select">
+            <label>Last Name:</label>
+          <input type="text" id="lastname" placeholder="Last name"> 
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-info"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="child select">
+            <label>CNIC:</label>
+          <input type="text" id="cnic" placeholder="Father name"> 
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-info"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="child phoneNumber select">
+          <label for="phone">Phone number:</label>
+          <input type="tel" placeholder="3471845339" id="phone">
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-info"></i>
+          <small class="small small_position">Error Msg</small>
+        </div>
+        <div class="child select">
+            <label>Email:</label>
+          <input type="email" id="email" placeholder="Email"> 
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-info"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="child">
+            <label>Date of Birth</label>
+            <select id="date" name="dob" >
+                <option value="">Day</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            <select id="dob_month" name="dob_month">
+              <option value="">Month</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <select id="dob_year" name="dob_year">
+                
+                    <option value="">Year</option>
+                    <script>
+                      for(var i=1960; i<=2023; i++) {
+                        document.write("<option value='" + i + "'>" + i + "</option>");
+                      }
+                    </script>
+                  
+                  
+            </select>
+            
+        </div>
+        <div class="child child_1">
+          <label style="display: block;">Gender:</label>
+
+          <div class="radio">
+          <input type="radio" name="gender" value="male" >
+          <label for="male">Male</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="gender" value="female" >
+          <label for="female">Female</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="gender" value="other" >
+          <label for="other">Other</label>
+        </div>
+        <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-info"></i>
+          <small>Error Msg</small>
+      </div>
+
+<div class="child child_1">
+  <label for="photo">Upload photo (max 6MB):</label>
+  <input type="file" id="photo" name="photo" accept="image/*"  max-size="6000000" onchange="previewImage(event)" class="uploadPhoto">
+  <span id="filesize"></span>
+  
+  <div id="preview"></div>
+  
+  <script>
+  function previewImage(event) {
+    var input = event.target;
+    var filesize = document.getElementById('filesize');
+    // var preview = document.getElementById('preview');
+  
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+  
+      reader.onload = function(e) {
+        var img = new Image();
+        img.src = e.target.result;
+        img.onload = function() {
+          var size = (input.files[0].size / 1024 / 1024).toFixed(2) + ' MB';
+          filesize.innerHTML = size;
+        };
+      };
+  
+      reader.readAsDataURL(input.files[0]);
+    } else {
+      filesize.innerHTML = '';
+      preview.innerHTML = '';
+    }
+  }
+  </script>
+  
+</div>
+        </div>
+  
+       <!-- address  -->
+       <h3 class="center">Address</h3>
+        <div class="address grid_1">
+          <div class="child select">
+            <label>Country:</label>
+          <input type="text" id="country" placeholder="State/Country" value="" name="State/Country">
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-info"></i>
+          <small>Error Msg</small> 
+        </div>
+            <div class="child select">
+                <label>Address:</label>
+              <input type="text" id = "address" placeholder="Address" value="" name="Address"> 
+              <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-info"></i>
+          <small>Error Msg</small>
+            </div>
+           
+            <div class="child select">
+                <label>Postcode:</label>
+              <input type="text" id = "postcode" placeholder="Zip/postcode" value="" name="Postcode"> 
+              <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-info"></i>
+          <small>Error Msg</small>
+            </div>
+         
+           
+        </div>
+        <div class="btn">
+        <button name="submit">Submit</button>
+            <button>Clear</button>
+        </div>
+        </form>
+        
+    </div>
+
+  <script src="phone-number-validation\build\js\intlTelInput.js"></script>
+</body>
+</html>
