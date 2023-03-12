@@ -264,9 +264,7 @@ form {
     width: 99%;
     max-width: 1152px;
     /* border: 2px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
     position: relative;
     background: black;
     border-radius: 8px;
