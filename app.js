@@ -8,7 +8,7 @@ let phone = document.getElementById("phone")
 let email = document.getElementById("email")
 let postcode = document.getElementById("postcode")
 let parentNumber = document.getElementsByClassName("phoneNumber")
-console.log(parentNumber)
+
 
 // let last;
 // for(let pa of parentNumber){
